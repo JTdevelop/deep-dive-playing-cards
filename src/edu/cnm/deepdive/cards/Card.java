@@ -20,11 +20,11 @@ public class Card implements Comparable<Card> {
 
   @Override
   public int compareTo(Card other) {
-     int comparison = this.suit.compareTo(other.suit);
-     if (comparison == 0) {
-       comparison = rank.compareTo(other.rank);
-     }
-     return comparison;
+    int comparison = this.suit.compareTo(other.suit);
+    if (comparison == 0) {
+      comparison = rank.compareTo(other.rank);
+    }
+    return comparison;
   }
 
   @Override
